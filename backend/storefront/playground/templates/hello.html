@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <h1>name</h1>
+    <ul>
+        {% for user in users %}
+            <li>
+                name: {{user.name}}<br>
+                phoneNumber: {{user.phoneNumber}}<br>
+            </li>
+        {% empty %}
+        <li>No search logs found.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
